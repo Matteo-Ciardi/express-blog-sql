@@ -20,7 +20,7 @@ Ora passiamo ad implementare le logiche delle nostre CRUD:
 - Show dovrà restituire un singolo post in formato JSON
 - Destroy dovrà eliminare un singolo post dalla lista, stampare nel terminale (console.log) la lista aggiornata, e rispondere con uno stato 204 e nessun contenuto.
 
-**Bonus**
+**Bonus:**
 
 - Implementare un filtro di ricerca nella index che mostri solo i post che hanno un determinato Tag
 - In Show e Destroy, controllare se il parametro si riferisce ad un post esistente, in caso contrario, rispondere con uno stato 404 e un messaggio d’errore, sempre in formato JSON.
@@ -49,7 +49,7 @@ Testiamolo con postman.
 ### Milestone 6
 Ripetiamo il procedimento per la rotta di Update, in modo da avere la possibilità di modificare le nostre risorse. 
 
-**Bonus**
+**Bonus:**
 
 In Update, controllare se il parametro si riferisce ad un post esistente, in caso contrario, rispondere con uno stato 404 e un messaggio d’errore, sempre in formato JSON.
 
@@ -58,3 +58,30 @@ Dopo aver completato tutte le operazioni CRUD, completiamo le nostre API inseren
 
 - Se viene chiamato un endpoint inesistente, un middleware dovrà rispondere un messaggio e uno status appropriato.
 - Se viene generato un errore, un middleware si occuperà di rispondere con un messaggio e uno status appropriato.
+
+### Milestone 8
+
+- Importiamo il db in allegato su MySQL Workbench
+- Installiamo il client mysql2 con npm i mysql2 nell’app Express
+- Creiamo un file di configurazione per connettere il database
+- Inseriamo un console.log nella logica di connessione e proviamo ad avviare l’applicazione per verificare che non ci siano errori.
+
+### Milestone 9
+
+- Facciamo sì che l’API di INDEX restituisca la lista di post recuperata dal database in formato JSON
+- Verifichiamo su Postman che la risposta sia corretta
+
+### Milestone 10 
+
+- Facciamo sì che l’API di DESTROY permetta di eliminare un post dal database
+- Verifichiamo su Postman che la chiamata non dia errore e risponda 204
+- Verifichiamo su MySQL Workbench che il post venga effettivamente rimosso
+
+### Milestone 11
+
+- Facciamo sì che l’API di SHOW restituisca il post desiderato in formato JSON
+- Verifichiamo su Postman che la risposta sia corretta
+
+**Bonus:**
+
+Far sì che la SHOW restituisca il post comprensivo di tag, recuperandoli grazie alla relazione tra post e tags, esistente sul database
