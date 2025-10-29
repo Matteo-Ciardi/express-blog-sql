@@ -1,0 +1,21 @@
+{
+  "name": "express-blog-routing",
+  "version": "1.0.0",
+  "description": "Esercizio Boolean | Esxpress Routing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "node --watch server.js"
+  },
+  "keywords": [
+    "Boolean",
+    "express",
+    "routing"
+  ],
+  "author": "matteo-ciardi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
